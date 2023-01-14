@@ -1,0 +1,19 @@
+[package]
+name = "rtsp-recorder"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.68"
+async-std = "1.12.0"
+chrono = "0.4.23"
+clap = "3.2.23"
+clustervms = { git = "https://github.com/ClusterVMS/clustervms-rs" }
+duct = "0.13.6"
+env_logger = "0.10.0"
+figment = "0.10.8"
+log = "0.4.17"
+serde = { version = "1.0.152", features = ["derive"] }
+tokio = { version = "1.24.1", features = ["fs", "macros", "rt-multi-thread", "sync"] }
+toml = "0.5.10"
+url = { version = "2.3.1", features = ["serde"] }
